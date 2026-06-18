@@ -1,0 +1,14 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "X4q-Setw3KXXDJs2yQG-M"
+uri = "file://project-complete-export.zip"
+type = "unspecified"
+title = "QWE Community — Complete Export (with .env)"
+
+[[outputs]]
+id = "TJAycKc0ec9vi1ck1gKw1"
+uri = "file://qwe-vercel-ready.zip"
+type = "unspecified"
+title = "QWE Community — Vercel Ready (Standalone)"

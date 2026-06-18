@@ -1,0 +1,27 @@
+kind = "web"
+previewPath = "/"
+title = "QWE Community"
+version = "1.0.0"
+id = "artifacts/qwe-community"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 24783
+
+[services.development]
+run = "pnpm --filter @workspace/qwe-community run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/qwe-community", "run", "build" ]
+publicDir = "artifacts/qwe-community/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
